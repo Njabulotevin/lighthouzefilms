@@ -11,7 +11,8 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Light Houze Films",
-  description: "LightHouze Multimedia founded by Khanyi Nxumalo is a company specializing in the film and television industry, with a strong focus on series producing and consulting. ",
+  description:
+    "LightHouze Multimedia founded by Khanyi Nxumalo is a company specializing in the film and television industry, with a strong focus on series producing and consulting. ",
 };
 
 export default function RootLayout({
