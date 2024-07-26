@@ -27,5 +27,3 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: '.next'  # or wherever your built files are located
-          server-dir: '/public_html'  # or wherever your project should be deployed on the server
