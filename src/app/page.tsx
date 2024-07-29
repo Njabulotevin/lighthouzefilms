@@ -76,15 +76,14 @@ export default function Home() {
         initial="offscreen"
         whileInView="onscreen"
         // viewport={{ amount: 0.8 }}
-        className="lg:p-20 pt-32 lg:pt-[50px] w-full bg-[url('/camera_bg.png')] "
+        className="bg-size-mobile lg:p-20 pt-32 lg:pt-[50px] w-full bg-[url('/camera_bg.png')] "
         style={{
-          backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
       >
         <section className=" flex  flex-wrap flex-col w-full  px-10 lg:pt-20 py-6">
-          <div className="flex   flex-wrap  gap-20 lg:gap-24 min-h-[60vh] justify-center items-center text-gray-100 ">
+          <div className="flex flex-wrap  gap-20 lg:gap-24 min-h-[60vh] justify-center items-center text-gray-100 ">
             <motion.div
               variants={titleVariants}
               className="flex flex-col gap-4"
@@ -100,7 +99,7 @@ export default function Home() {
                 <span className="gradientText">Innovative.</span>{" "}
                 <span>Expert.</span>
               </h1>
-              <div className="w-full text-center mt-6 flex flex-col gap-4 max-w-[40vw] mx-auto">
+              <div className="w-full text-center mt-6 flex flex-col gap-4 lg:max-w-[40vw] mx-auto">
                 <p>
                   {/* <span className="lg:hidden flex text-center justify-center font-medium">
                     Illuminating the Future of Storytelling.
@@ -147,13 +146,13 @@ export default function Home() {
             </h3>
           </motion.div>
           <p className=" text-primary-900">
-            LightHouze Multimedia founded by Khanyi Nxumalo is a company
-            specializing in the film and television industry, with a strong
-            focus on series producing and consulting. With a team of seasoned
-            industry experts and a proven track record of successful projects,
-            we offer tailored solutions to help clients navigate the complex
-            landscape of series production and create compelling, high-quality
-            content that captivates audiences worldwide.
+            LightHouze films founded by Khanyi Nxumalo is a company specializing
+            in the film and television industry, with a strong focus on series
+            producing and consulting. With a team of seasoned industry experts
+            and a proven track record of successful projects, we offer tailored
+            solutions to help clients navigate the complex landscape of series
+            production and create compelling, high-quality content that
+            captivates audiences worldwide.
           </p>
         </motion.div>
       </motion.section>
@@ -188,6 +187,70 @@ export default function Home() {
           })}
         </div>
       </section>
+      <motion.section
+        initial="offscreen"
+        whileInView="onscreen"
+        // viewport={{ once: true, amount: 0.8 }}
+        className="flex gap-6 w-full flex-wrap justify-center lg:gap-3 bg-white min-h-[60vh] px-10 lg:px-20 py-36"
+      >
+        <motion.div
+          variants={aboutUsHeaderVariants}
+          className="flex flex-col  gap-3 "
+        >
+          <h2 className="text-6xl lg:text-5xl font-semibold gradientText">
+            Contact Us
+          </h2>
+
+          <h3 className="text-lg lg:text-lg font-semibold text-primary-900 ">
+            Fill in the contact details and we'll get back to you.
+          </h3>
+
+          <form className="flex flex-col gap-2">
+            <div className="flex flex-row gap-2">
+              <input
+                placeholder="Enter email address"
+                type="email"
+                className="border border-gray-200 p-2"
+              />
+              <input
+                placeholder="Enter name"
+                type="text"
+                className="border border-gray-200 p-2"
+              />
+            </div>
+            <textarea
+              placeholder="message"
+              className="border border-gray-200 p-2"
+            />
+            <button className="bg-red-700 p-2 px-10 text-xl rounded mx-auto font-medium">
+              Submit
+            </button>
+          </form>
+        </motion.div>
+
+        <div className="flex flex-col gap-4">
+          <h3 className="text-lg lg:text-lg font-semibold text-primary-900 ">
+            Contact Details:
+          </h3>
+
+          <div className="flex flex-col lg:flex-row w-full gap-3">
+            <h4 className="font-semibold text-red-700">Contact Person:</h4>
+            <p>Khanyi Nxumalo</p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row w-full gap-3">
+            <h4 className="font-semibold text-red-700">Contact Number:</h4>
+            <p>+27 82 305 6223</p>
+          </div>
+          <div className="flex flex-col lg:flex-row w-full gap-3">
+            <h4 className="font-semibold text-red-700">Email Address:</h4>
+            <div className="">
+              <p>khanyi@lightHouzefilms.co.za</p>
+              <p>info@lightHouzefilms.co.za</p>
+            </div>
+          </div>
+        </div>
+      </motion.section>
       {/* <section className="lg:px-20 p-10 lg:py-36 flex flex-wrap justify-center gap-4 min-h-[60vh]">
         <div className="flex flex-col gap-4">
           <h2 className="text-4xl font-semibold gradientText">

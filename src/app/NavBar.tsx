@@ -38,7 +38,7 @@ export default function NavBar() {
         <img
           src="/logo.png"
           alt="logo"
-          className="w-[40px] h-[50px] lg:h-[60px] lg:w-[220px] object-contain cursor-pointer"
+          className="w-[140px] h-[50px] lg:h-[60px] lg:w-[220px] object-contain cursor-pointer"
           onClick={()=>router.push("/")}
         />
         {/* <h1 className="text-red-600 text-xl">LIGHTHOUZE FILMS</h1> */}

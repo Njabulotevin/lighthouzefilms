@@ -16,6 +16,16 @@ body {
   background: var(--background);
 }
 
+.bg-size-mobile {
+  background-size: 300%;
+}
+
+@media (min-width: 1024px) { /* Tailwind's `lg` breakpoint */
+  .bg-size-desktop {
+    background-size: 100%;
+  }
+}
+
 .gradientText {
   background-image: linear-gradient(
     to right top,
